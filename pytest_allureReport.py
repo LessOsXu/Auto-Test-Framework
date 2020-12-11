@@ -43,8 +43,8 @@ class Test_Login:
     @pytest.mark.parametrize(
         "user, pwd, msg_expected, contact_expected",
         [
-            ('', '123456', 'Please input Username.', 'Contacts: Oscar (oxu@fortinet.com)'),
-            ('oscar', '', 'Please input Password.', 'Contacts: Oscar (oxu@fortinet.com)'),
+            ('', '123456', 'Please input Username.', 'Contacts: Oscar'),
+            ('oscar', '', 'Please input Password.', 'Contacts: Oscar'),
             ('oscar1', '1234', '-----------', '==========='),
             ('', '', 'Please input Username.', 'Contacts: Oscar (oxu@fortinet.com)'),
         ]
